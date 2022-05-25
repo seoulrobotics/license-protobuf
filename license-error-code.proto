@@ -16,4 +16,5 @@ enum LicenseErrorCodes{
   GPUNOTALLOWED = 10;
   FEATURENOTALLOWED = 11;
   UNKNOWNERROR = 1000;
+  NONE = 2000;
 }
