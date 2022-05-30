@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package argos_proto;
+
+message sensor_info {
+  string name = 1;
+  int32 count = 2;
+}
+
+message license_info {
+  enum AllowFeature{
+    CAN = 0;
+    VIN_ASSOCIATOR = 1;
+  }
+  string machine_id = 1;
+  string expiration_date = 2;
+  repeated sensor_info sensors = 3;
+  int32 max_lidar_count = 4;
+  int32 version = 5;
+  bool allow_gpu_algo_node = 6;
+  int32 max_algo_node_count = 7;
+  repeated AllowFeature allow_features = 8;
+  int32 max_argos_session_count = 9;
+  string issued_date = 10;
+}
