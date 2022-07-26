@@ -22,4 +22,5 @@ message license_info {
   repeated AllowFeature allow_features = 8;
   int32 max_argos_session_count = 9;
   string issued_date = 10;
+  int32 gpu_algo_node_count = 11;
 }
