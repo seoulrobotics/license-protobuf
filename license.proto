@@ -8,7 +8,7 @@ message sensor_info {
 }
 
 message license_info {
-  enum AllowFeature{
+  enum AllowedFeature{
     CAN = 0;
     VIN_ASSOCIATOR = 1;
   }
@@ -19,7 +19,8 @@ message license_info {
   int32 version = 5;
   bool allow_gpu_algo_node = 6;
   int32 max_algo_node_count = 7;
-  repeated AllowFeature allow_features = 8;
+  repeated AllowedFeature allow_features = 8;
   int32 max_argos_session_count = 9;
   string issued_date = 10;
+  int32 gpu_algo_node_count = 11;
 }
