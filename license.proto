@@ -13,6 +13,11 @@ message license_info {
     VIN_ASSOCIATOR = 1;
     MULTI_ROSBAG = 2;
   }
+  enum LicenseType{
+    TRIAL = 0;
+    NORMAL = 1;
+    PERPETUAL = 2;
+  }
   string machine_id = 1;
   string expiration_date = 2;
   repeated sensor_info sensors = 3;
@@ -24,4 +29,5 @@ message license_info {
   int32 max_argos_session_count = 9;
   string issued_date = 10;
   int32 gpu_algo_node_count = 11;
+  LicenseType license_type = 12;
 }
