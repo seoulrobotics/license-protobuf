@@ -14,8 +14,8 @@ message license_info {
     MULTI_ROSBAG = 2;
   }
   enum LicenseType{
-    TRIAL = 0;
-    NORMAL = 1;
+    NORMAL = 0;
+    TRIAL = 1;
     PERPETUAL = 2;
   }
   string machine_id = 1;
