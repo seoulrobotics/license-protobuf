@@ -13,6 +13,7 @@ message license_info {
     VIN_ASSOCIATOR = 1;
     MULTI_ROSBAG = 2;
     DEBUGGING_SUPPORT = 3;
+    ATLAS = 4;
   }
   string machine_id = 1;
   string expiration_date = 2;
