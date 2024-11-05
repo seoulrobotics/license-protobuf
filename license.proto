@@ -14,6 +14,7 @@ message license_info {
     MULTI_ROSBAG = 2;
     DEBUGGING_SUPPORT = 3;
     ATLAS = 4;
+    MACGYVER = 5;
   }
   string machine_id = 1;
   string expiration_date = 2;
